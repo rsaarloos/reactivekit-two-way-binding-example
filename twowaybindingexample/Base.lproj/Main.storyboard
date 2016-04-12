@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="twowaybindingexample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BOw-SB-0GA">
+                                <rect key="frame" x="20" y="384" width="560" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="482180038.96594101">
+                                    <!--2016-04-12 18:53:58 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selected date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pau-l3-PU4">
+                                <rect key="frame" x="249.5" y="40" width="101.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kve-vu-GDC">
+                                <rect key="frame" x="239.5" y="91" width="121" height="30"/>
+                                <state key="normal" title="Set date to Today"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pau-l3-PU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Blo-nP-O2v"/>
+                            <constraint firstItem="kve-vu-GDC" firstAttribute="top" secondItem="Pau-l3-PU4" secondAttribute="bottom" constant="30" id="MBc-Uy-vI3"/>
+                            <constraint firstItem="BOw-SB-0GA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PT4-9o-tvQ"/>
+                            <constraint firstItem="kve-vu-GDC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TnD-fA-hii"/>
+                            <constraint firstItem="Pau-l3-PU4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="WZY-3t-dBk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BOw-SB-0GA" secondAttribute="bottom" id="rQR-as-uWA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BOw-SB-0GA" secondAttribute="trailing" id="v2Y-0a-V7S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentDateLabel" destination="Pau-l3-PU4" id="djN-3H-qfn"/>
+                        <outlet property="datePicker" destination="BOw-SB-0GA" id="Qym-gH-1Lc"/>
+                        <outlet property="setTodayButton" destination="kve-vu-GDC" id="06p-2I-giG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

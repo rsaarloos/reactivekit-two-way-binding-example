@@ -1,0 +1,19 @@
+PODS:
+  - AFDateHelper (3.3.0)
+  - ReactiveKit (2.0.0-beta2)
+  - ReactiveUIKit (2.0.0-beta2):
+    - ReactiveKit (~> 2.0.0-beta2)
+
+DEPENDENCIES:
+  - AFDateHelper
+  - ReactiveKit (= 2.0.0-beta2)
+  - ReactiveUIKit (= 2.0.0-beta2)
+
+SPEC CHECKSUMS:
+  AFDateHelper: 137b5b9d70fe13b810e1817fa2d8c116d7988f5c
+  ReactiveKit: d3b441d12d8fc6b96de9d50610b53f7645cede9a
+  ReactiveUIKit: f20083029998dfa7dda6cad3d838a2d7ef87b6c6
+
+PODFILE CHECKSUM: b751991ec08aea45f9d19bcde21b1539d4c24216
+
+COCOAPODS: 1.0.0.beta.2
