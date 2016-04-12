@@ -1,2 +1,2 @@
-# reactivekit-two-way-binding-example
+# ReactiveKit Two Way binding
 Example project demonstrates ReactiveKit two-way binding
