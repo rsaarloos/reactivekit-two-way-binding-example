@@ -403,7 +403,7 @@ Assert(event.deletes == [1])
 If that array was bound to a table or a collection view, the view would automatically animate only the changes from the *merge*. Helpful, isn't it.
 
 
-## <a name="threading"></a> Threading
+## <a name="threading"></a>Threading
 
 ReactiveKit uses simple concept of execution contexts inspired by [BrightFutures](https://github.com/Thomvis/BrightFutures) to handle threading.
 
@@ -421,14 +421,15 @@ When you want to receive events on a specific dispatch queue, just use `context`
 * If you found a bug, open an issue.
 * If you have a feature request, open an issue.
 * If you want to contribute, submit a pull request (include unit tests).
+* You can track project plan and progress on [Waffle](https://waffle.io/ReactiveKit/ReactiveKit).
 
 ## Installation
 
 ### CocoaPods
 
 ```
-pod 'ReactiveKit', '~> 2.0-beta1'
-pod 'ReactiveUIKit', '~> 2.0-beta1'
+pod 'ReactiveKit', '~> 2.0-beta3'
+pod 'ReactiveUIKit', '~> 2.0-beta3'
 ```
 
 ### Carthage
